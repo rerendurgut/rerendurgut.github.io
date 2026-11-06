@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="soft" data-buttons="solid" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Recep Eren Durgut — Industrial Engineer & Mobility Systems Specialist (AI-Augmented)</title>
+<meta name="description" content="Personal engineering portfolio of Recep Eren Durgut. Boğaziçi & BME graduate building intelligent urban mobility, mathematical optimization, and Web GIS platforms using AI agent orchestration.">
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+
+<!-- Google Fonts (Geist & Geist Mono) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Taste Skill System Stylesheets -->
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<link rel="stylesheet" href="assets/ui/base.css">
+
+<style>
+:root {
+  --p-bg: #090b10;
+  --p-surface: #111520;
+  --p-surface-elevated: #161c2b;
+  --p-border: rgba(90, 185, 252, 0.12);
+  --p-border-hover: rgba(90, 185, 252, 0.35);
+  --p-ink: #f0f4f8;
+  --p-muted: #8b9bb4;
+  --p-accent: #5ab9fc;
+  --p-accent-ink: #090b10;
+  --p-action: #5ab9fc;
+  --p-action-ink: #090b10;
+  --p-emerald: #10b981;
+  --p-emerald-dim: rgba(16, 185, 129, 0.15);
+  
+  --font-display: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-text: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, Menlo, Monaco, Consolas, monospace;
+  
+  --display-weight: 500;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.045em;
+}
+
+/* Global Polish */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--p-bg);
+  color: var(--p-ink);
+  font-family: var(--font-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header & Nav */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  background: rgba(9, 11, 16, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--p-border);
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--p-ink);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.nav-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(90, 185, 252, 0.1);
+  color: var(--p-accent);
+  border: 1px solid rgba(90, 185, 252, 0.25);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links a {
+  color: var(--p-muted);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 450;
+  transition: color 0.15s ease;
+}
+.nav-links a:hover {
+  color: var(--p-ink);
+}
+.btn-nav-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--p-surface-elevated);
+  color: var(--p-ink);
+  border: 1px solid var(--p-border);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.btn-nav-cv:hover {
+  background: rgba(90, 185, 252, 0.15);
+  border-color: var(--p-accent);
+  color: var(--p-accent);
+}
+
+/* Sections */
+.site-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+section {
+  padding: 100px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 130px;
+  position: relative;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--p-emerald-dim);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: #34d399;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+.hero-title {
+  font-size: clamp(40px, 6vw, 68px);
+  font-weight: 600;
+  letter-spacing: var(--display-tracking-xl);
+  line-height: 1.08;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+.hero-role {
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 450;
+  color: var(--p-accent);
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+.hero-bio {
+  font-size: 18px;
+  color: var(--p-muted);
+  max-width: 760px;
+  line-height: 1.65;
+  margin: 0 0 36px 0;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--p-action);
+  color: var(--p-action-ink);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--p-surface);
+  color: var(--p-ink);
+  border: 1px solid var(--p-border);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover {
+  background: var(--p-surface-elevated);
+  border-color: var(--p-border-hover);
+  color: #ffffff;
+}
+.hero-badges-strip {
+  display: flex;
+  gap: 24px;
+  margin-top: 54px;
+  padding-top: 28px;
+  border-top: 1px solid var(--p-border);
+  flex-wrap: wrap;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+.stat-val {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: var(--font-mono);
+}
+.stat-lbl {
+  font-size: 12px;
+  color: var(--p-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: 48px;
+}
+.section-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--p-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  display: block;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+.section-desc {
+  font-size: 16px;
+  color: var(--p-muted);
+  max-width: 680px;
+  margin: 0;
+}
+
+/* Flagship Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+.project-card {
+  background: var(--p-surface);
+  border: 1px solid var(--p-border);
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--p-border-hover);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4), 0 0 24px rgba(90, 185, 252, 0.06);
+}
+.card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.badge-live {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.badge-tech {
+  background: rgba(90, 185, 252, 0.1);
+  color: var(--p-accent);
+  border: 1px solid rgba(90, 185, 252, 0.2);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.project-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.project-summary {
+  font-size: 14px;
+  color: var(--p-muted);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  flex-grow: 1;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 22px;
+}
+.tag-pill {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #cbd5e1;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.project-link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--p-ink);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.project-link-item:hover {
+  color: var(--p-accent);
+}
+
+/* Philosophy / How I Build */
+.philosophy-banner {
+  background: linear-gradient(180deg, var(--p-surface-elevated) 0%, var(--p-surface) 100%);
+  border: 1px solid var(--p-border);
+  border-radius: 12px;
+  padding: 36px;
+  margin-bottom: 36px;
+}
+.philosophy-quote {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #e2e8f0;
+  margin: 0;
+}
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.pillar-card {
+  background: var(--p-surface);
+  border: 1px solid var(--p-border);
+  border-radius: 8px;
+  padding: 24px;
+}
+.pillar-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.pillar-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+.pillar-desc {
+  font-size: 14px;
+  color: var(--p-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Timeline */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  padding-left: 28px;
+  border-left: 2px solid var(--p-border);
+}
+.timeline-item {
+  position: relative;
+}
+.timeline-dot {
+  position: absolute;
+  left: -35px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--p-accent);
+  border: 3px solid var(--p-bg);
+}
+.timeline-dates {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--p-accent);
+  margin-bottom: 4px;
+}
+.timeline-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+.timeline-sub {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+.timeline-body {
+  font-size: 14px;
+  color: var(--p-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Publications & Reports */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.report-card {
+  background: var(--p-surface);
+  border: 1px solid var(--p-border);
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.report-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+.report-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--p-muted);
+  margin-bottom: 12px;
+}
+.btn-download-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--p-accent);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+.btn-download-pdf:hover {
+  text-decoration: underline;
+}
+
+/* Footer & Contact */
+footer {
+  padding: 80px 0 40px 0;
+  background: #06070a;
+  border-top: 1px solid var(--p-border);
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.footer-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+.footer-sub {
+  font-size: 14px;
+  color: var(--p-muted);
+  margin: 0;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.toast-notice {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #10b981;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  z-index: 200;
+}
+.toast-notice.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.credit-line {
+  font-size: 12px;
+  color: #556277;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .top-nav { padding: 14px 20px; }
+  .hero-section { min-height: auto; padding-top: 100px; padding-bottom: 60px; }
+  section { padding: 60px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="top-nav">
+  <a href="#" class="nav-brand">
+    <span>Recep Eren Durgut</span>
+    <span class="nav-badge">AI-Augmented Builder</span>
+  </a>
+  <div class="nav-links">
+    <a href="#projects">Systems</a>
+    <a href="#philosophy">How I Build</a>
+    <a href="#journey">Journey</a>
+    <a href="#research">Research</a>
+    <a href="mailto:recep.durgut@boun.edu.tr" id="copy-email-btn">Email</a>
+  </div>
+  <a href="docs/Recep_Eren_Durgut_CV.pdf" class="btn-nav-cv" download>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    <span>Download CV (PDF)</span>
+  </a>
+</nav>
+
+<div class="site-container">
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span>Budapest &amp; Istanbul • Available for Engineering &amp; AI-Augmented Roles</span>
+    </div>
+
+    <h1 class="hero-title">Recep Eren Durgut</h1>
+    <h2 class="hero-role">Industrial Engineer &amp; Mobility Systems Specialist</h2>
+    <p class="hero-bio">
+      Bridging <b>Operations Research, Mathematical Optimization (MILP), and Urban Transit Networks</b> with <b>autonomous AI coding agents</b> to architect and ship production digital systems end-to-end.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        <span>Explore Flagship Systems</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="docs/Recep_Eren_Durgut_CV.pdf" class="btn-secondary" download>
+        <span>Download Full CV (PDF)</span>
+      </a>
+      <a href="https://github.com/rerendurgut" target="_blank" class="btn-secondary">
+        <span>GitHub Profile</span>
+      </a>
+    </div>
+
+    <div class="hero-badges-strip">
+      <div class="stat-item">
+        <span class="stat-val">BOUN &amp; BME</span>
+        <span class="stat-lbl">Industrial Eng. &amp; MSc Mobility</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">6 Systems</span>
+        <span class="stat-lbl">Live Open-Source Deployments</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">&lt; 3 ms</span>
+        <span class="stat-lbl">Dijkstra Isochrone Engine</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-val">100% Agentic</span>
+        <span class="stat-lbl">Transparent AI Workflow</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLAGSHIP PROJECTS SECTION -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-tag">Production Implementations</span>
+      <h2 class="section-title">Flagship Systems &amp; Software</h2>
+      <p class="section-desc">Each application combines analytical modeling, geospatial computing, and AI-directed full-stack implementation.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- 1. Way to City -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-live">● Live on Vercel</span>
+            <span class="badge-tech">Web GIS / Transit</span>
+          </div>
+          <h3 class="project-title">🧭 Way to City</h3>
+          <p class="project-summary">Global urban transit and navigation guide providing airport-to-city rail connections, transit card fare rules, cultural landmarks, and interactive Leaflet map exploration for travelers across hundreds of cities.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Next.js 16</span>
+            <span class="tag-pill">React 19</span>
+            <span class="tag-pill">TypeScript</span>
+            <span class="tag-pill">Tailwind v4</span>
+            <span class="tag-pill">Leaflet</span>
+            <span class="tag-pill">Google Sheets Cache</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://way-to-city.vercel.app" target="_blank" class="project-link-item">
+            <span>Live Site</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+          <a href="https://github.com/rerendurgut/way-to-city" target="_blank" class="project-link-item">
+            <span>Source Code</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. PropScore Engine -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-live">● WebGL 2 GPU</span>
+            <span class="badge-tech">Spatial Computing</span>
+          </div>
+          <h3 class="project-title">🏙️ PropScore Engine</h3>
+          <p class="project-summary">High-performance urban accessibility platform analyzing 20,651 building polygons and 10,608 POIs in Bursa Nilüfer. Directs a custom Binary Min-Heap Dijkstra router to compute 5/10/15 min walking isochrones in under 3 milliseconds.</p>
+          <div class="project-tags">
+            <span class="tag-pill">MapLibre GL</span>
+            <span class="tag-pill">WebGL 2</span>
+            <span class="tag-pill">Dijkstra Routing</span>
+            <span class="tag-pill">QGIS</span>
+            <span class="tag-pill">Spatial Indexing</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rerendurgut/propscore-engine" target="_blank" class="project-link-item">
+            <span>View Architecture &amp; Code</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. EV Fleet Charging Optimizer -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-tech">PuLP / MILP</span>
+            <span class="badge-tech">BME MSc Capstone</span>
+          </div>
+          <h3 class="project-title">⚡ EV Fleet Optimizer</h3>
+          <p class="project-summary">Linear Programming optimization model replacing ICE municipal buses with battery electric vehicles at Budapest's Újpest-Központ hub (Lines 25, 147, 170, 220, 270). Solves time-dependent charging, battery SoC, and depot grid constraints.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">PuLP</span>
+            <span class="tag-pill">Operations Research</span>
+            <span class="tag-pill">BKK Transit Data</span>
+            <span class="tag-pill">Fleet Simulation</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rerendurgut/ev-fleet-charging-optimizer" target="_blank" class="project-link-item">
+            <span>GitHub Repository</span>
+          </a>
+          <a href="docs/Electromobility_Presentation_Final.pdf" target="_blank" class="project-link-item">
+            <span>Presentation Deck (PDF)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 4. APC Optimization -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-tech">Gurobi Optimizer</span>
+            <span class="badge-tech">BOUN Thesis</span>
+          </div>
+          <h3 class="project-title">🧩 APC Optimization</h3>
+          <p class="project-summary">Assignment Problem with Conflicts supervised by Prof. İ. Kuban Altınel at Boğaziçi University. Formulates NP-hard conflict-constrained matchings via Mixed Integer Linear Programming (MILP) with Lagrangian relaxation &amp; subgradient heuristics.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">Gurobi</span>
+            <span class="tag-pill">MILP</span>
+            <span class="tag-pill">Lagrangian Relaxation</span>
+            <span class="tag-pill">Combinatorial Optimization</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rerendurgut/apc-optimization" target="_blank" class="project-link-item">
+            <span>GitHub Repository</span>
+          </a>
+          <a href="docs/APC_Final_Report.pdf" target="_blank" class="project-link-item">
+            <span>Thesis Report (PDF)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5. İSPARK Live Parking -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-tech">Streamlit / GIS</span>
+            <span class="badge-tech">İBB Open Data</span>
+          </div>
+          <h3 class="project-title">🚗 İSPARK Real-Time Map</h3>
+          <p class="project-summary">Live Istanbul parking occupancy monitoring platform connecting to the municipal open data API. Features real-time capacity thresholds, interactive Folium marker clustering, and one-click Google Maps turn-by-turn navigation.</p>
+          <div class="project-tags">
+            <span class="tag-pill">Python</span>
+            <span class="tag-pill">Streamlit</span>
+            <span class="tag-pill">Folium</span>
+            <span class="tag-pill">İBB REST API</span>
+            <span class="tag-pill">Leaflet Clustering</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rerendurgut/ispark_otopark" target="_blank" class="project-link-item">
+            <span>GitHub Repository</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6. MRP Production System -->
+      <div class="project-card">
+        <div>
+          <div class="card-header-row">
+            <span class="badge-tech">SQL Stored Proc</span>
+            <span class="badge-tech">Enterprise ERP</span>
+          </div>
+          <h3 class="project-title">🏭 MRP Production Engine</h3>
+          <p class="project-summary">Enterprise Material Requirements Planning engine implementing recursive Bill of Materials (BOM) decomposition in MySQL, event-driven database triggers for dynamic netting, and a Streamlit operational dashboard.</p>
+          <div class="project-tags">
+            <span class="tag-pill">MySQL</span>
+            <span class="tag-pill">Recursive Procedures</span>
+            <span class="tag-pill">Database Triggers</span>
+            <span class="tag-pill">Streamlit</span>
+            <span class="tag-pill">Production Netting</span>
+          </div>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rerendurgut/mrp-production-system" target="_blank" class="project-link-item">
+            <span>GitHub Repository</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I BUILD (PHILOSOPHY & AGENTIC WORKFLOW) -->
+  <section id="philosophy">
+    <div class="section-header">
+      <span class="section-tag">Methodology &amp; Workflow</span>
+      <h2 class="section-title">The AI-Augmented Engineering Paradigm</h2>
+      <p class="section-desc">How domain knowledge and autonomous AI agent orchestration produce robust software 10x faster.</p>
+    </div>
+
+    <div class="philosophy-banner">
+      <p class="philosophy-quote">
+        “I don't manually hand-type repetitive boilerplate or CSS from scratch. My competitive advantage is <b>rigorous analytical systems thinking</b> (Operations Research, mathematical modeling, and transit networks) combined with <b>high-precision AI agent prompting, architecture design, and quality auditing</b>.”
+      </p>
+    </div>
+
+    <div class="philosophy-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">📐</div>
+        <h3 class="pillar-title">1. Mathematical &amp; Domain Core</h3>
+        <p class="pillar-desc">Formulating the objective functions, graph topologies, business logic, and operational constraints grounded in Boğaziçi Industrial Engineering and BME Transportation systems.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🤖</div>
+        <h3 class="pillar-title">2. Agentic Code Orchestration</h3>
+        <p class="pillar-desc">Prompting autonomous coding agents with precise architectural specs to generate TypeScript, Python, SQL, and WebGL modules in hours rather than weeks.</p>
+      </div>
+
+      <div class="pillar-card">
+        <div class="pillar-icon">🛡️</div>
+        <h3 class="pillar-title">3. The Engineering Quality Gate</h3>
+        <p class="pillar-desc">Validating heuristic bounds against Gurobi proofs, stress-testing edge cases, debugging build logs, and verifying cross-browser performance in real viewports.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE TIMELINE -->
+  <section id="journey">
+    <div class="section-header">
+      <span class="section-tag">Academic &amp; Professional Path</span>
+      <h2 class="section-title">Education &amp; Experience</h2>
+      <p class="section-desc">Strong foundation in industrial engineering, transport telematics, and operational excellence.</p>
+    </div>
+
+    <div class="timeline-list">
+      <!-- BME -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-dates">Sep 2025 — Present • Budapest, Hungary</div>
+        <h3 class="timeline-heading">Budapest University of Technology and Economics (BME)</h3>
+        <div class="timeline-sub">M.Sc. Transportation Engineering &amp; Smart Mobility</div>
+        <p class="timeline-body">Micro &amp; Macro transportation modeling (PTV VISUM &amp; VISSIM), Intelligent Transport Systems (ITS), electric bus fleet optimization, and Geographic Information Systems (QGIS).</p>
+      </div>
+
+      <!-- Warsaw -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-dates">Summer 2026 • Warsaw, Poland</div>
+        <h3 class="timeline-heading">Warsaw University of Technology</h3>
+        <div class="timeline-sub">Summer Mobility School: Sustainable Urban Mobility Planning</div>
+        <p class="timeline-body">Completed intensive European transport planning curriculum with Grade 5.0 (ELC Micro-credential).</p>
+      </div>
+
+      <!-- Borusan Port -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-dates">Jun 2026 — Jul 2026 • Bursa, Turkey</div>
+        <h3 class="timeline-heading">Borusan Port</h3>
+        <div class="timeline-sub">Operation Excellence Intern</div>
+        <p class="timeline-body">Analyzed terminal workflows and tracked field logistics data within the Transfer 360 project to optimize port container operations and eliminate transit bottlenecks.</p>
+      </div>
+
+      <!-- Pluxee -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-dates">Jun 2024 — Sep 2025 • Istanbul, Turkey</div>
+        <h3 class="timeline-heading">Pluxee Turkey (formerly Sodexo)</h3>
+        <div class="timeline-sub">Jr. Commercial Analyst &amp; Commercial Development Intern</div>
+        <p class="timeline-body">Automated executive KPI reports in Dynamics 365 CRM for the CSO and CEO, modeled sales pipeline health, and conducted regression analyses on customer retention.</p>
+      </div>
+
+      <!-- BOUN -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-dates">Sep 2019 — Jun 2025 • Istanbul, Turkey</div>
+        <h3 class="timeline-heading">Boğaziçi University (BOUN)</h3>
+        <div class="timeline-sub">B.Eng. Industrial Engineering</div>
+        <p class="timeline-body">Concentration in Operations Research, mathematical programming, and supply chain. Thesis on Assignment Problem with Conflicts under Prof. Dr. İ. Kuban Altınel. President of the Debate Society (2023-2024) and VP of Inter-Club Board.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & CASE STUDIES -->
+  <section id="research">
+    <div class="section-header">
+      <span class="section-tag">Research &amp; Case Studies</span>
+      <h2 class="section-title">Technical Reports &amp; Papers</h2>
+      <p class="section-desc">Direct PDF access to capstone research, mathematical proofs, and urban case studies.</p>
+    </div>
+
+    <div class="reports-grid">
+      <div class="report-card">
+        <div>
+          <h3 class="report-title">Assignment Problem with Conflicts (APC)</h3>
+          <div class="report-meta">Boğaziçi University • IE492 Capstone • Prof. Kuban Altınel</div>
+          <p class="project-summary">Mathematical formulations, conflict graph transformations, Lagrangian subgradient optimization, and comparative Gurobi benchmarks.</p>
+        </div>
+        <a href="docs/APC_Final_Report.pdf" class="btn-download-pdf" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Open Full Report (PDF)</span>
+        </a>
+      </div>
+
+      <div class="report-card">
+        <div>
+          <h3 class="report-title">Electrification of Buses: Újpest-Központ Hub</h3>
+          <div class="report-meta">BME Budapest • Transportation Engineering Research</div>
+          <p class="project-summary">PuLP linear programming charging models, BKK timetable integration, battery SoC degradation constraints, and fleet capital expenditure analysis.</p>
+        </div>
+        <a href="docs/Electromobility_Presentation_Final.pdf" class="btn-download-pdf" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Open Presentation Deck (PDF)</span>
+        </a>
+      </div>
+
+      <div class="report-card">
+        <div>
+          <h3 class="report-title">Comprehensive Resume / Curriculum Vitae</h3>
+          <div class="report-meta">Official English Version • Up to Date</div>
+          <p class="project-summary">Verified educational achievements, language proficiencies (Native Turkish, YOKDIL 92 English, DELF A2 French), and professional internships.</p>
+        </div>
+        <a href="docs/Recep_Eren_Durgut_CV.pdf" class="btn-download-pdf" download>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Official CV (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="site-container">
+    <div class="footer-content">
+      <div>
+        <h3 class="footer-title">Let's Connect &amp; Collaborate</h3>
+        <p class="footer-sub">Interested in smart mobility, optimization systems, or AI-augmented engineering? Feel free to reach out.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/recep-eren-durgut/" target="_blank" class="btn-secondary">
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/rerendurgut" target="_blank" class="btn-secondary">
+          <span>GitHub</span>
+        </a>
+        <button id="copy-footer-email" class="btn-primary" style="cursor: pointer; border: none;">
+          <span>Copy Email Address</span>
+        </button>
+      </div>
+    </div>
+    <div class="credit-line">
+      © 2026 Recep Eren Durgut. Crafted using taste-skill 2.5 standards and AI agent pair programming.
+    </div>
+  </div>
+</footer>
+
+<div id="toast" class="toast-notice">Email copied: recep.durgut@boun.edu.tr</div>
+
+<script>
+function copyEmail() {
+  const email = "recep.durgut@boun.edu.tr";
+  navigator.clipboard.writeText(email).then(() => {
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 2800);
+  });
+}
+document.getElementById("copy-email-btn")?.addEventListener("click", (e) => {
+  e.preventDefault();
+  copyEmail();
+});
+document.getElementById("copy-footer-email")?.addEventListener("click", copyEmail);
+</script>
+
+<!-- Taste Skill System Script -->
+<script src="assets/system.js"></script>
+</body>
+</html>
